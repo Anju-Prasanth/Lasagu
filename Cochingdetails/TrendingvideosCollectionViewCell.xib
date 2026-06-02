@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TrendingvideosCollectionViewCell" id="gTV-IL-0wX" customClass="TrendingvideosCollectionViewCell" customModule="Lasagu" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="351" height="199"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="351" height="199"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ZQ-XS-Ecg">
+                        <rect key="frame" x="5" y="0.0" width="341" height="189"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uon-fh-cYh">
+                                <rect key="frame" x="0.0" y="0.0" width="341" height="152"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="152" id="xdO-B3-VfS"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LPY-fF-aJy">
+                                <rect key="frame" x="10" y="156" width="321" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Je3-v6-JyG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 234" translatesAutoresizingMaskIntoConstraints="NO" id="sTs-V6-jvu">
+                                <rect key="frame" x="142" y="72" width="57" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="4da-vz-tYP"/>
+                                    <constraint firstAttribute="width" constant="57" id="ljR-C1-dcP"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="LPY-fF-aJy" secondAttribute="trailing" constant="10" id="0jS-K3-JQQ"/>
+                            <constraint firstItem="uon-fh-cYh" firstAttribute="leading" secondItem="5ZQ-XS-Ecg" secondAttribute="leading" id="5fs-DT-L3O"/>
+                            <constraint firstItem="LPY-fF-aJy" firstAttribute="top" secondItem="uon-fh-cYh" secondAttribute="bottom" constant="4" id="DaJ-Cl-Bmg"/>
+                            <constraint firstAttribute="trailing" secondItem="uon-fh-cYh" secondAttribute="trailing" id="GZC-Tb-Nbk"/>
+                            <constraint firstItem="sTs-V6-jvu" firstAttribute="centerY" secondItem="5ZQ-XS-Ecg" secondAttribute="centerY" id="H1O-F6-eK6"/>
+                            <constraint firstItem="sTs-V6-jvu" firstAttribute="centerX" secondItem="5ZQ-XS-Ecg" secondAttribute="centerX" id="HkZ-4I-Ga1"/>
+                            <constraint firstItem="LPY-fF-aJy" firstAttribute="leading" secondItem="5ZQ-XS-Ecg" secondAttribute="leading" constant="10" id="Lc5-vr-ejN"/>
+                            <constraint firstItem="uon-fh-cYh" firstAttribute="top" secondItem="5ZQ-XS-Ecg" secondAttribute="top" id="uLN-qi-Vs7"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="5ZQ-XS-Ecg" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="2KS-zM-h3g"/>
+                <constraint firstAttribute="bottom" secondItem="5ZQ-XS-Ecg" secondAttribute="bottom" constant="10" id="SIN-kY-Lzu"/>
+                <constraint firstAttribute="trailing" secondItem="5ZQ-XS-Ecg" secondAttribute="trailing" constant="5" id="WDn-Mu-rkd"/>
+                <constraint firstItem="5ZQ-XS-Ecg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="nFj-IQ-Rqw"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="351" height="199"/>
+            <connections>
+                <outlet property="Outerview" destination="5ZQ-XS-Ecg" id="m81-U0-VH9"/>
+                <outlet property="imageviewvideos" destination="uon-fh-cYh" id="fUO-m8-mpf"/>
+                <outlet property="lblvideotitle" destination="LPY-fF-aJy" id="uVO-lf-Cbx"/>
+            </connections>
+            <point key="canvasLocation" x="155.79710144927537" y="143.63839285714286"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Group 234" width="32" height="32"/>
+    </resources>
+</document>
